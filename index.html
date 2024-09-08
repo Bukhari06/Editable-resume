@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Editable Resume</h1>
+    
+    <form id="resumeForm" class="form-container">
+      <h2>Personal Information</h2>
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input type="number" id="phone" placeholder="Phone Number" required>
+      </div>
+
+      <h2>Education</h2>
+      <div class="form-group">
+        <input type="text" id="education" placeholder="Degree, Institution" required>
+      </div>
+
+      <h2>Work Experience</h2>
+      <div class="form-group">
+        <textarea id="workExperience" placeholder="Job Title, Company, Duration" required></textarea>
+      </div>
+
+      <h2>Skills</h2>
+      <div class="form-group">
+        <input type="text" id="skills" placeholder="Skills (comma-separated)" required>
+      </div>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resumePreview" class="resume-preview">
+      <h2>Resume</h2>
+      <p><strong>Name:</strong> <span id="previewName" class="editable">Click to edit</span></p>
+      <p><strong>Email:</strong> <span id="previewEmail" class="editable">Click to edit</span></p>
+      <p><strong>Phone:</strong> <span id="previewPhone" class="editable">Click to edit</span></p>
+      <h3>Education</h3>
+      <p id="previewEducation" class="editable">Click to edit</p>
+      <h3>Work Experience</h3>
+      <p id="previewWorkExperience" class="editable">Click to edit</p>
+      <h3>Skills</h3>
+      <p id="previewSkills" class="editable">Click to edit</p>
+    </div>
+  </div>
+
+  <script src="dist/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px; 
+    margin: auto; 
+    background-image: url('bk.bmp');
+    padding: 20px;
+    border-radius: 8px;
+
+  }
+  
+  h1, h2, h3 {
+    color: rgb(34, 179, 82);
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px; 
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+    width: 100%; 
+    padding: 20px; 
+    font-size: 16px; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+  }
+  
+  textarea {
+    height: 100px; 
+    resize: vertical; 
+  }
+  
+  button {
+    background-color: #4ab11a;
+    color: rgb(97, 85, 54); 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+  }
+  
+  button:hover {
+    background-color: #0ef; 
+  }
+  
+  .resume-preview {
+    margin-top: 20px; 
+    padding: 20px; 
+    background: #f9f9f9; 
+    border-radius: 8px; 
+   
+  }
+  
+  .editable {
+    cursor: pointer;
+    color: rgb(31, 179, 17);
+    text-decoration: underline;
+  }
+  
+  .editable:hover {
+    color: #0ef;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px; 
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+      font-size: 14px; 
+    }
+  }
+  
